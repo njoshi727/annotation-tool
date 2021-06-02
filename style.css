@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    height: 95vh;
+}
+
+#gallery-Canvas-Div{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 70vw;
+    position: absolute;
+    top:12%;
+
+}
+
+#gallery-div{
+    border: 1px solid black;
+    min-height:80vh;
+    max-height:80vh;
+    min-width: 15%;
+    max-width: 15%;
+
+    overflow: scroll;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.gallery-img{
+    width: 100%;
+}
+
+#canvas-div{
+    max-height:80vh;
+    max-width:82%;
+    overflow: scroll;
+
+    border: 1px solid black;
+}
