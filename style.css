@@ -41,6 +41,10 @@ body{
     width: 100%;
 }
 
+.active-img{
+    border: 2px solid whitesmoke;
+}
+
 #canvas-div{
     max-height:80vh;
     max-width:82%;
