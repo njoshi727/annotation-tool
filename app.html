@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Tutorial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <input type="file" id="file-selector" multiple>
+    <input type="color" id="pencolor" name="favcolor" value="black">
+    <input type="color" id="regioncolor" name="favcolor" value="#0000c8">
+
+    <div class="pallete">
+        <i class="fas fa-file-upload"></i>
+        <i class="fas fa-download download-icon"></i>
+        <i class="fas fa-pen"></i>
+        <i class="fas fa-tint"></i>
+        <i class="fas fa-question-circle"></i>
+    </div>
+
+    <div id="gallery-Canvas-Div">
+        <div id="gallery-div"></div>
+        <div id = "canvas-div">
+            <canvas id="tutorial" width="4096" height="4096"></canvas>
+        </div>
+        <div class="category-div">
+            <div class="add-category">
+                <label for="inputCategoryField"> Add a new Category</label>
+                <input type="text" id="inputCategoryField" name="cateogory" required>
+                <button id = "category-push"> Add Category</button>
+            </div>
+
+            <div class="select-category">
+                <label for="category-select">Choose a category:</label>
+                <select name="categories" id="category-select">
+                    <option value="-1" id="-1"> Select </option>
+                </select>
+            </div>
+
+            <div class="select-image-info">
+
+                <label for="selectImageName" class="select-image-label" disabled>File Name </label>
+                <input type="text" id="selectImageName" name="imgName" class="select-image-field" readonly disabled>
+
+                <label for="selectImageId" class="select-image-label" disabled>Image Id </label>
+                <input type="text" id="selectImageId" name="imgId" class="select-image-field" readonly disabled>
+
+                <label for="selectImageHeight" class="select-image-label" disabled>Height</label>
+                <input type="text" id="selectImageHeight" name="imgHeight" class="select-image-field" readonly disabled>
+
+                <label for="selectImageWidth" class="select-image-label" disabled>Width</label>
+                <input type="text" id="selectImageWidth" name="imgWidth" class="select-image-field" readonly disabled>
+
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

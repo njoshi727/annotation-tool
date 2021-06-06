@@ -4,51 +4,65 @@
     margin: 0;
 
     box-sizing: border-box;
-}
-
-body{
-    position: relative;
-    height: 95vh;
-}
-
-#gallery-Canvas-Div{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    max-width: 70vw;
-    position: absolute;
-    top:12%;
-
-}
-
-#gallery-div{
-    border: 1px solid black;
-    min-height:80vh;
-    max-height:80vh;
-    min-width: 15%;
-    max-width: 15%;
-
-    overflow: scroll;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    color : white;
     
 }
 
-.gallery-img{
-    width: 100%;
+body{
+    background: #3a6186;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 15px;
 }
 
-.active-img{
-    border: 2px solid whitesmoke;
+.description-container{
+    padding-left: 50px;
 }
 
-#canvas-div{
-    max-height:80vh;
-    max-width:82%;
-    overflow: scroll;
+.title{
+    font-size: 70px;
+    font-family: 'Padauk', sans-serif;
+}
 
-    border: 1px solid black;
+.description-box{
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 30px;
+    line-height: 2.5rem;
+    font-size: 28px;
+    font-weight: 50;
+}
+
+.beautify-hr{
+    background-color: white;
+    width: 20%;
+    height: 7px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+.myButton {
+	box-shadow:inset 0px 0px 24px -26px #efdcfb;
+	background:linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
+	background-color:#dfbdfa;
+	border-radius:17px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:22px;
+	font-weight:bold;
+	padding:13px 50px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #44126e;
+    margin-top: 8px;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+	background-color:#bc80ea;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
