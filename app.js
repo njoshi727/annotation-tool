@@ -364,8 +364,8 @@ function draw() {
                         acc to selected img
                         */
                         context.clearRect(0, 0, canvas.width, canvas.height);
-                        canvas.width = img.naturalWidth;
-                        canvas.height = img.naturalHeight;
+                        canvas.width = Math.max(1000,img.naturalWidth);
+                        canvas.height = Math.max(1000,img.naturalHeight);
                         context.drawImage(img, 0, 0);
                         
                         // Handling Active Class on image gallery!
