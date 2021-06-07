@@ -116,8 +116,8 @@ function draw() {
                 if(getRegion(e.offsetX,e.offsetY) === selectedRegion){
                     let img = document.querySelector(".active-img")
                     context.clearRect(0, 0, canvas.width, canvas.height);
-                    canvas.width = img.naturalWidth;
-                    canvas.height = img.naturalHeight;
+                    canvas.width = Math.max(1000,img.naturalWidth);
+                    canvas.height = Math.max(img.naturalHeight);
                     context.drawImage(img, 0, 0);
 
                     drawUnColouredPolygon();
